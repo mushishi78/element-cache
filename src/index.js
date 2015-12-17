@@ -29,8 +29,13 @@ function createElement(id) {
 }
 
 function set(element, k, v) {
-  if(k === 'text')                       { element.appendChild(document.createTextNode(v)); }
-  else if(k in element && k !== 'style') { element[k] = v;                                  }
-  else if(v === undefined || v === null) { element.removeAttribute(k, v);                   }
-  else                                   { element.setAttribute(k, v);                      }
+  if(k === 'text')                       { setText(element, v);           }
+  else if(k in element && k !== 'style') { element[k] = v;                }
+  else if(v === undefined || v === null) { element.removeAttribute(k, v); }
+  else                                   { element.setAttribute(k, v);    }
+}
+
+function setText(element, text) {
+  element.innerHTML = '';
+  element.appendChild(document.createTextNode(text));
 }

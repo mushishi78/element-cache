@@ -1,0 +1,20 @@
+{
+  "name": "element-cache",
+  "version": "0.0.1",
+  "description": "DOM element cache with cached setters",
+  "main": "dist/element-cache.js",
+  "author": "Max White",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4",
+    "sinon": "^1.17.2",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "scripts": {
+    "build": "webpack --progress --hide-modules",
+    "prepublish": "npm run build",
+    "test": "mocha test --recursive"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "element-cache",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "DOM element cache with cached setters",
   "main": "dist/element-cache.js",
   "author": "Max White",

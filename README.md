@@ -14,7 +14,7 @@ npm install --save element-cache
 ``` JavaScript
 var ec = require('element-cache')();
 
-// Set the class and style of the element with id "flash"
+// Set the class and text of the element with id "flash"
 ec('flash').set({ class: 'warning', text: 'File missing!' });
 
 // Get the current value, 'warning', without making any DOM requests.
